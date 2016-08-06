@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NameOfLastUsedPHPPublishProfile>WebPI</NameOfLastUsedPHPPublishProfile>
+    <StartAction>SpecificPage</StartAction>
+    <SpecificPageValue>index.php/Predigten</SpecificPageValue>
+    <StartUrlValue />
+    <PHPDebugging>True</PHPDebugging>
+    <JsDebugging>False</JsDebugging>
+    <SilverlightDebugging>False</SilverlightDebugging>
+    <Server>IISExpress</Server>
+    <CustomServerUrl />
+    <PublishEvent>None</PublishEvent>
+    <PublishBeforeDebugProfile />
+    <PHPDevAutoPort>True</PHPDevAutoPort>
+    <PHPDevPort>22040</PHPDevPort>
+    <PHPDevRouting />
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost/sela</IISProjectUrl>
+  </PropertyGroup>
+</Project>

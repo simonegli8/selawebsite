@@ -1,0 +1,650 @@
+/* 
+######################################################################
+CSS stylesheet for gpEasy FlatAdmin 2015 
+Author: J. Krausz
+Date: 2015-03-18
+Version 1.0
+######################################################################
+*/
+
+@charset"UTF-8";
+
+/* Open Sans web fonts for Admin Interface */
+
+@font-face {
+font-family:'OpenSansAdmin';
+src:local('Open Sans'), local('OpenSans');
+src:url('OpenSans/OpenSans-Regular-webfont.eot');
+src:url('OpenSans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('OpenSans/OpenSans-Regular-webfont.woff') format('woff'),
+     url('OpenSans/OpenSans-Regular-webfont.ttf') format('truetype');
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:'OpenSansAdmin';
+src:local('Open Sans Italic'), local('OpenSans-Italic');
+src:url('OpenSans/OpenSans-Italic-webfont.eot');
+src:url('OpenSans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('OpenSans/OpenSans-Italic-webfont.woff') format('woff'),
+     url('OpenSans/OpenSans-Italic-webfont.ttf') format('truetype');
+font-weight:normal;
+font-style:italic;
+}
+
+@font-face {
+font-family:'OpenSansAdmin';
+src:local('Open Sans Bold'), local('OpenSans-Bold');
+src:url('OpenSans/OpenSans-Bold-webfont.eot');
+src:url('OpenSans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('OpenSans/OpenSans-Bold-webfont.woff') format('woff'),
+     url('OpenSans/OpenSans-Bold-webfont.ttf') format('truetype');
+font-weight:bold;
+font-style:normal;
+}
+
+@font-face {
+font-family:'OpenSansAdmin';
+src:local('Open Sans Bold Italic'), local('OpenSans-BoldItalic');
+src:url('OpenSans/OpenSans-BoldItalic-webfont.eot');
+src:url('OpenSans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('OpenSans/OpenSans-BoldItalic-webfont.woff') format('woff'),
+     url('OpenSans/OpenSans-BoldItalic-webfont.ttf') format('truetype');
+font-weight:bold;
+font-style:italic;
+}
+
+/* FINDER */
+
+#admincontent #finder {
+/* font-size:82.5%; */
+}
+
+
+/* Admin Styles Overrides + CKEditor Minimalist Skin */
+
+
+/* ICONS */
+
+.gp_floating_area .gp_maximize,
+.gp_floating_area .admin_arrow_out,
+.gp_full_size .gp_floating_area .gp_maximize,
+#simplepanel.compact .toolbar .toggle_panel,
+#simplepanel .toolbar .toggle_panel,
+#simplepanel.minb .toolbar .toggle_panel,
+.icon_admin_home,
+.icon_admin,
+.admin_arrow_out,
+.img_icon_plug,
+.admin_arrow_out,
+#simplepanel .icon_page_gear, #adminlinks2 .icon_page_gear span,
+#simplepanel .icon_page, #adminlinks2 .icon_page span,
+#simplepanel .icon_app, #adminlinks2 .icon_app span,
+#simplepanel .icon_plug, #adminlinks2 .icon_plug span, #adminlinks2 .icon_plug a,
+#simplepanel .icon_edapp, #adminlinks2 .icon_edapp span,
+#simplepanel .icon_user, #adminlinks2 .icon_user span,
+#simplepanel .icon_rfrsh, #adminlinks2 .icon_rfrsh span,
+#gp_edit_overlay span a.gp_overlay_expand,
+#admin_menu_tools .icon_page,
+#admin_menu_div .icon_user,
+/* gpEasy 4.4+ */
+.gpicon_admin, .gpicon_app, .gpicon_arrow_out, 
+.gpicon_chart, .gpicon_edapp, .gpicon_home, 
+.gpicon_page_gear, .gpicon_page, .gpicon_plug, 
+.gpicon_rfrsh, .gpicon_user {
+background-image:url("imgs/admin_icons.png");
+}
+
+/* gpEasy 4.4+ */
+.gpicon_chart {
+background-position: 50% -586px;
+}
+
+.icon_admin_search, .gpicon_search {
+background-image:url("imgs/page_white_magnify.png");
+}
+
+/* gpEasy 4.4+ */
+#panelgroup_resources .gpicon_page_gear,
+#panelgroup_resources_click .gpicon_page_gear {
+background-position: 50% -616px;
+}
+
+/* section sorting */
+#section_sorting .copy_icon, 
+#section_sorting .bin_icon {
+background:url("imgs/icons_section_sorting.png")!important;
+}
+
+#section_sorting .copy_icon {
+background-position: 50% -9px!important;
+}
+
+#section_sorting .bin_icon {
+background-position: 50% -41px!important;
+}
+
+
+
+/* page manager */
+
+#admin_menu_div .cut_list_icon,
+#admin_menu_div .copy_icon,
+#admin_menu_div .bin_icon,
+#admin_menu_div .page_edit_icon,
+#admin_menu_div .insert_before_icon,
+#admin_menu_div .insert_after_icon {
+background-image:url("imgs/admin_menu_icons.png");
+}
+
+#admin_menu_tools {
+border:none;
+border-radius:0;
+box-shadow:0 0 3px rgba(0,0,0,0.4);
+}
+
+#admin_menu_tools b {
+border-bottom:none;
+border-top:none;
+font-weight:normal;
+text-shadow:0 1px 0 #fff;
+padding: 7px 40px 7px 7px;
+}
+
+#admin_menu_tools b:first-child {
+margin-top:0;
+}
+
+#admin_menu_tools span:last-child {
+margin-bottom:0;
+}
+
+#admin_menu_tools span {
+border-bottom:none;
+}
+
+#admin_menu li div {
+border-radius:0;
+padding:4px 0;
+background-color:#f1f1f1;
+}
+
+#admin_menu li div:hover {
+background-color:#e0e0e0;
+}
+
+#admin_menu li div.current {
+background-color:#00A8E5!important;
+border:none;
+}
+
+#admin_menu li div a.gp_label,
+#admin_menu li div a.gp_label:hover, 
+#admin_menu li div a.gp_label:link {
+font-weight:normal;
+}
+
+#admin_menu li div.current a.gp_label {
+color:#fff;
+}
+
+#admin_menu_div .layout_icon,
+.layout_color_id {
+width:12px;
+height:12px;
+border-radius:50%;
+}
+
+#admin_menu_tools .layout_icon {
+margin-top:3px;
+}
+
+.layout_label .layout_color_id {
+margin-top:-3px;
+}
+
+.placeholder {
+background:#eee!important;
+border:none;
+border-radius:0;
+box-shadow:inset 0 2px 3px #aaa;
+}
+
+
+#gp_admin_box, .gp_floating_area {
+border:none!important;
+border-radius:0!important;
+box-shadow:0 0 2px rgba(0, 0, 0, 0.5)!important;
+background:#EDEDED!important;
+}
+
+
+#simplepanel .toolbar, 
+#login_container #loginform {
+border:none!important;
+padding-top:40px;
+}
+
+/* gpEasy 4.4+ */
+#login_container #loginform {
+border-radius:0;
+font-family:OpenSansAdmin,Sans-Serif;
+box-shadow:none;
+padding-top:24px;
+background:#EDEDED;
+}
+
+#simplepanel .toolbar:before,
+#simplepanel .toolbar:after,
+#login_container #loginform:before,
+#login_container #loginform:after {
+box-sizing:border-box;
+font-size:16px;
+height:24px;
+font-weight:bold;
+position:absolute;
+top:10px;
+left:50%;
+}
+
+#simplepanel .toolbar:before,
+#login_container #loginform:before {
+content:"GP";
+margin:0 0 0 -2.6em;
+color:#00A8E5;
+background:#222;
+padding:0 3px 0 5px;
+border:2px solid #00A8E5;
+line-height:20px;
+border-right:0;
+border-radius:12px 0 0 12px;
+box-shadow:inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.5);
+text-shadow:0 -1px 1px #000;/*, 0 1px 0 rgba(255,255,255,0.18);*/
+}
+
+#simplepanel .toolbar:after,
+#login_container #loginform:after {
+content:"EASY";
+line-height:24px;
+margin:0 0 0 -0.7em;
+color:#222222;
+background:#00A8E5;
+padding:0 9px 0 3px;
+border-radius:0 12px 12px 0;
+box-shadow:inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.5); 
+text-shadow:0 1px 0 rgba(255,255,255,0.34);
+}
+
+/* gpEasy 4.4+ */
+#login_container #loginform:before,
+#login_container #loginform:after {
+top:-2.33em;
+width:auto;
+}
+
+/* gpEasy < 4.4 */
+#gpx_content #login_container #loginform:before,
+#gpx_content #login_container #loginform:after {
+display:none;
+}
+
+#login_container #loginform input.login_submit,
+#login_container #loginform a[title="Cancel"] {
+display:inline-block;
+width:48%;
+text-align:center;
+}
+
+
+@-moz-document url-prefix() { 
+
+  #simplepanel .toolbar:before,
+  #login_container #loginform:before {
+  line-height:19px;
+  }
+
+  #simplepanel .toolbar:after,
+  #login_container #loginform:after {
+  line-height:23px;
+  }
+
+}
+
+#simplepanel .toolbar > a:hover {
+background-color:#444;
+}
+
+
+
+#simplepanel > div {
+border:none!important;
+border-radius:0!important;
+box-shadow:0 0 3px rgba(0, 0, 0, 0.6)!important;
+}
+
+#simplepanel .submenu {
+background-color:#353535!important;
+}
+
+#simplepanel .submenu li > a, 
+#simplepanel .submenu li > span {
+padding:7px 14px!important;
+}
+
+#simplepanel .submenu li > a:hover {
+background-color:#444;
+}
+
+
+#simplepanel .submenu li.selected a {
+font-weight:normal!important;
+font-style:italic;
+}
+
+#simplepanel .submenu li.selected a span.layout_color_id {
+margin-top:-3px;
+}
+
+#simplepanel .submenu li.seperator a {
+border-bottom:1px solid #222;
+}
+
+#simplepanel .submenu .simplepanel_selected_li,
+#simplepanel .submenu .simplepanel_selected_li > a:hover {
+background-color:#00A8E5;
+color:#fff;
+}
+
+#simplepanel .expand ul,
+#simplepanel .expand_child ul {
+background-color:#353535!important;
+border:none!important;
+border-radius:0!important;
+}
+
+#gp_admin_html,
+#simplepanel a, 
+#simplepanel span, 
+#simplepanel div {
+font-family:"OpenSansAdmin",Sans-Serif!important;
+}
+
+#simplepanel a {
+text-overflow:ellipsis;
+}
+
+#simplepanel .panelgroup {}
+
+#simplepanel .toplink {
+border:none!important;
+font-weight:normal!important;
+margin:4px 0!important;
+display:block;
+font-size:13px!important;
+line-height:16px!important;
+}
+
+#simplepanel .toplink span {
+font-size:13px!important;
+line-height:16px!important;
+}
+
+
+#simplepanel .panelgroup:hover a.toplink span,
+#simplepanel a.simplepanel_selected_panelgroup span {
+color:#00A8E5!important;
+}
+
+
+#simplepanel.compact .panelgroup .panelgroup2 {
+padding-left:3px;
+padding-right:0;
+}
+
+#simplepanel.compact .submenu {
+border:none!important;
+border-radius:0!important;
+}
+
+#simplepanel.compact .submenu a.submenu_top {
+border-bottom:0;
+height:18px;
+font-weight:normal;
+color:#00A8E5!important;
+}
+
+
+#adminlinks2 .panelgroup2 {
+background:#f1f1f1!important;
+border:none!important;
+border-radius:0!important;
+box-shadow:none!important;
+}
+
+#adminlinks2 .panelgroup2 .expand_child_click, 
+#adminlinks2 .panelgroup2 .expand_child_click:hover {
+border:none!important;
+}
+
+#adminlinks2 .panelgroup2 .expand_child_click.expand {
+background-color:#e2e2e2;
+border:1px solid #e2e2e2!important;
+}
+
+#adminlinks2 > div > span.layout_label > a {
+overflow:hidden;
+text-overflow:ellipsis;
+width:auto;
+}
+
+#gp_admin_box > div, .gp_floating_area > div {
+border-radius:0!important;
+}
+
+#gp_admin_html a, 
+#gp_admin_html a:visited, 
+#gp_admin_html a:hover {
+color:#00A8E5;
+}
+
+#adminlinks2 li a:hover {
+color:#00A8E5!important;
+}
+
+#gp_admin_html *::-moz-selection { 
+background:#00A8E5!important;
+color:#FFFFFF;
+text-shadow:none;
+}
+
+#gp_admin_html *::selection { 
+background:#00A8E5;
+color:#FFFFFF;
+text-shadow:none;
+}
+
+#gp_admin_html option:hover,
+#gp_admin_html option:checked { 
+background:#00A8E5!important;
+color:#FFFFFF;
+text-shadow:none;
+}
+
+#ckeditor_area a.ckeditor_control,
+#gp_admin_html .gpsubmit, 
+#gp_admin_html .gpbutton, 
+#gp_admin_html .gpcheckbox.checked,
+#gp_admin_html label.all_checkbox.checked,
+#gp_admin_html .all_checkboxes label.checked,
+#gp_admin_html input[type="submit"],
+/* gpEasy 4.4+ */
+#loginform input[type="submit"],
+#ckeditor_area button#add_section.ckeditor_control  {
+border-radius:3px;
+background:#00A8E5;
+background:-moz-linear-gradient(top,  #3fbae2 0%, #0097dd 100%);
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#3fbae2), color-stop(100%,#0097dd));
+background:-webkit-linear-gradient(top,  #3fbae2 0%,#0097dd 100%);
+background:-o-linear-gradient(top,  #3fbae2 0%,#0097dd 100%);
+background:-ms-linear-gradient(top,  #3fbae2 0%,#0097dd 100%);
+background:linear-gradient(to bottom,  #3fbae2 0%,#0097dd 100%);
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fbae2', endColorstr='#0097dd',GradientType=0 );
+color:#fff!important;
+text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+padding: 7px 12px;
+box-shadow:inset 0 -1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6);
+border:1px solid #0079AD!important;
+}
+
+#ckeditor_area a.ckeditor_control[data-cmd="ck_close"],
+#gp_admin_html .gpcancel,
+#gp_admin_html input.gpcancel,
+#gp_admin_html .gpcheckbox, 
+#gp_admin_html label.all_checkbox.unchecked,
+#gp_admin_html .all_checkboxes label.unchecked,
+/* gpEasy 4.4+ */
+#loginform a[title="Cancel"]  {
+text-decoration:none;
+border-radius:3px;
+background: #eeeeee;
+background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+color:#333!important;
+text-shadow:0 1px 0 #fff;
+padding: 7px 12px;
+box-shadow:inset 0 -1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.8);
+border:1px solid #aaa!important;
+}
+
+#gp_admin_html input[type="submit"] {
+min-width:8em;
+}
+
+#gp_admin_html p.admin_note b {
+font-weight:normal;
+}
+
+#gp_admin_html .all_checkboxes label.checked,
+#gp_admin_html .gpcheckbox.checked {
+font-weight:normal;
+box-shadow:inset 0 1px 3px rgba(0,0,0,0.6);
+}
+
+#gp_admin_html textarea.custom_config {
+width:100%;
+margin-bottom:0.8em;
+}
+
+#gp_admin_html pre.json {
+white-space: pre-wrap;
+word-wrap: break-word;
+font-size:8pt!important;
+padding:1em;
+}
+
+#gp_admin_html table.configuration td {
+white-space:normal!important;
+}
+
+.gp_notice, .gp_warning { border-radius:0; }
+.gp_warning {}
+.gp_passed { border-radius:0; }
+
+
+#gp_admin_html .gpselect {
+border-radius:0!important;
+background:#f5f5f5;
+}
+
+div.collapsible h4, 
+div.collapsible h4 a {
+border-radius:0!important;
+background:#e0e0e0;
+border:none!important;
+}
+
+div.collapsible h4.gp_collapsed, 
+div.collapsible h4.gp_collapsed a {
+background:#f5f5f5;
+}
+
+#gp_admin_html textarea, 
+#gp_admin_html .gptextarea, 
+#gp_admin_html input[type="text"], 
+#gp_admin_html .gpinput,
+/* gpEasy 4.4+ */
+#loginform .login_text input {
+border:1px solid #ccc;
+border-radius:2px!important;
+box-shadow:none!important;
+}
+
+/* gpEasy 4.4+ */
+#loginform .login_text input {
+background-color:#f2f2f2!important;
+}
+
+#gp_admin_html textarea:focus, 
+#gp_admin_html .gptextarea:focus, 
+#gp_admin_html input[type="text"]:focus, 
+#gp_admin_html .gpinput:focus,
+/* gpEasy 4.4+ */
+#loginform .login_text input:focus {
+border-color:#00A8E5;
+background-color:#fff!important;
+}
+
+.bordered > tbody > tr > th, .bordered > thead > tr > th {
+background:#E4E4E4!important;
+color:#333!important;
+font-weight:normal!important;
+font-size:125%!important;
+}
+
+/* CKEditor */
+
+div.cke_top, 
+div.cke_inner {
+padding:0!important;
+background:none!important;
+border:0!important;
+box-shadow:none!important;
+}
+
+#ckeditor_area {
+width:240px;
+font-family:"OpenSansAdmin",Sans-Serif!important;
+}
+
+#ckeditor_area .cke_toolgroup {
+width:230px!important;
+border:none!important;
+border-radius:none!important;
+background:none!important;
+box-shadow:none!important;
+}
+
+div.cke_chrome {
+box-shadow:none!important;
+}
+
+.cke_combo_text {
+margin-top:4px!important;
+color:#333!important;
+}
+
+.cke_button_label {
+color:#333!important;
+}
+
+#ckeditor_area div#ckeditor_save {
+text-align:center;
+padding-top:5px;
+}
+

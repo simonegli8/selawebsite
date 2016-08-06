@@ -1,0 +1,19 @@
+/*
+plugin for Google Maps Marker
+Author: a2exfr
+http://my-sitelab.com/
+Date: 2015-02-11
+Version 1.0.3 */
+
+#mapCanvas {
+    width: 500px;
+    height: 400px;
+    float: left;
+  }
+  #infoPanel {
+    float: left;
+    margin-left: 10px;
+  }
+  #infoPanel div {
+    margin-bottom: 5px;
+  }

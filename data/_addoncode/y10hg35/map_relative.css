@@ -1,0 +1,20 @@
+/*
+plugin for Google Maps Marker
+Author: a2exfr
+http://my-sitelab.com/
+Date: 2015-02-11
+Version 1.0.3 */
+
+    #mapCanvas {
+        position: relative;
+       /* padding-bottom: 75%; */
+        height: 0;
+        overflow: hidden;
+		 width: 100% !important;
+		  }
+    #mapCanvas iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+	 }

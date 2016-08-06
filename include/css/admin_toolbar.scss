@@ -1,0 +1,31 @@
+
+
+body.gpAdmin #admincontent_panel.fixed{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:9001;
+}
+
+
+#admincontent_panel a.msg_publish_draft{
+	background-color:#329880;
+	}
+
+#admincontent_panel a.msg_publish_draft:hover{
+	background: lighten(#329880,5%);
+	}
+
+
+/**
+ * Fixed Position Adjustment when admin toolbar is displayed
+ *
+ */
+html:not(.edit_layout):not(.admin_body){
+	margin-top:$gp_nav_height;
+
+	.gp-fixed-adjust{
+		margin-top:29px;
+	}
+}

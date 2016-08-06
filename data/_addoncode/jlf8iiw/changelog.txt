@@ -1,0 +1,61 @@
+-----------------------------------------------------------------------------------
+SimpleBlogSEO - Change Log
+-----------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------
+v1.3.1 - 30-Dec-2013
+-----------------------------------------------------------------------------------
+- Bug fixed - Remove the hidden class from h4 tags in the EditConfig_Tmpl.php file
+
+-----------------------------------------------------------------------------------
+v1.3 - 29-Apr-2013
+-----------------------------------------------------------------------------------
+- Added - Config parameter 'Url Rewriting - Custom Delimiters'
+- Added - Config parameter 'Url Rewriting - Words Case'
+- Added - Config parameter 'Redirect Old Sef Urls to New Sef Urls (301)'
+- Changed - New slugify() method for cleaner sef urls (ASCII only)
+- Changed - Re-create the full id=>slug mapping in one shot (when empty)
+- Changed - Handle new post (creation) correctly/transparently
+- Changed - Non longer regen SB static content but rewrite it directly (regex)
+- Changed - Show hits only if the number of hits is > 0 
+- Changed - Improved 'blog as homepage' support (redirections)
+- Changed - Retrieve the post titles from the posts_<x>.php files (gadget)
+- Changed - Meta desc based on first sentence or first paragraph
+- Optimization - New class organisation/hierarchy
+- Optimization - Local variable $blog_title is now a class property
+- Bug fixed - 'return' missing in the _setRegen() method (EditConfig.php) 
+
+-----------------------------------------------------------------------------------
+v1.2 - 9-Apr-2013
+-----------------------------------------------------------------------------------
+- Added - "Blog as Homepage" support 
+- Bug fixed - Remove the hits entry when a blog post is deleted
+
+-----------------------------------------------------------------------------------
+v1.1 - 3-Mar-2013
+-----------------------------------------------------------------------------------
+- Changed - Configuration xhtml style
+- Changed - 'Clear SEF Urls' button now available for any install
+- Added - Most Read Blog Posts (Gadget)
+- Added - Language constant (Hits: %s)
+- Optimization - Create the full id=>title mapping in one shot
+- Optimization - New class organisation/hierarchy
+- Bug fixed - Search results duplicates
+- Bug fixed - Post inline editing error
+
+-----------------------------------------------------------------------------------
+v1.0.2 - 22-Feb-2013
+-----------------------------------------------------------------------------------
+- Bug fixed - SimpleBlog v1.7.3 compliancy
+
+-----------------------------------------------------------------------------------
+v1.0.1 - 11-Feb-2013
+-----------------------------------------------------------------------------------
+- Bug fixed - Simple Blog index.php file inclusion
+- Bug fixed - Division by zero (no blog post yet)
+
+-----------------------------------------------------------------------------------
+v1.0 - 10-Jan-2013
+-----------------------------------------------------------------------------------
+- First version

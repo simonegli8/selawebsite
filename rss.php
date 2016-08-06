@@ -1,0 +1,1 @@
+<?php require 'E:/Code/sela3/addons/Sermons/rss.php'; ?>

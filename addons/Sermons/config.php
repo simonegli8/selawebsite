@@ -1,0 +1,1 @@
+<?php require_once 'E:/Code/sela3/data/_addondata/Sermons/config.php'; ?>

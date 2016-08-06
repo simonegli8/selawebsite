@@ -1,0 +1,28 @@
+-----------------------------------------------------------------------
+AntiSpamSFS - Change Log
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+v1.3 - 18-Apr-2013
+-----------------------------------------------------------------------
+- Added - Can use either the AntiSpam_Check or the PageRunScript hook
+- Changed - Use $page->title instead of common::WhichPage() to get the page title
+
+-----------------------------------------------------------------------
+v1.2 - 15-Dec-2012
+-----------------------------------------------------------------------
+- Added a 'Latest Blocked Spammers' gadget
+- Fixed v3.5 'gpPlugins::incl()' compatibility problem (fatal error)
+- Fixed a design issue in the /Site/AntiSpamSFS.php file
+- Fixed a security issue (html injection) in the /Site/AntiSpamSFS.php file 
+- Fixed a small bug in the ManageForm.php file (notice)
+
+-----------------------------------------------------------------------
+v1.1 - 10-Oct-2012
+-----------------------------------------------------------------------
+- Added "create/modify/delete" user rights support 
+
+-----------------------------------------------------------------------
+v1.0 - 15-Sep-2012
+-----------------------------------------------------------------------
+- First version

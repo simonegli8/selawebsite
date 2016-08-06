@@ -1,3 +1,10 @@
+# Sela Webseite
+
+Dies ist die Webseite der Gemeinde Sela, Basel
+
+[Geminde Sela Online](http://www.gemeindesela.ch)
+
+
 #Typesetter CMS#
 
 Open source CMS written in PHP focused on ease of use with true WYSIWYG editing and flat-file storage.

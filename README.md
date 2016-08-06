@@ -4,6 +4,7 @@ Dies ist die Webseite der Gemeinde Sela, Basel
 
 [Geminde Sela Online](http://www.gemeindesela.ch)
 
+Hallo Welt!
 
 #Typesetter CMS#
 
